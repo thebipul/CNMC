@@ -1,0 +1,44 @@
+.home-container {
+  width: 90%;
+  margin: auto;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+.home-text {
+  width: 90%;
+  margin: auto;
+}
+.img-container {
+  flex: 50%;
+  display: flex;
+  justify-content: center;
+  object-fit: contain;
+  margin-bottom: 20px;
+  width: calc(100vw - 10px);
+}
+.img-container img {
+  max-width: 300px;
+}
+.text-container {
+  flex: 50%;
+  text-align: justify;
+}
+.swiper {
+  margin: auto;
+  width: 90%;
+  z-index: -1;
+}
+.swiper img {
+  width: 100%;
+  margin: auto;
+}
+@media screen and (max-width: 900px) {
+  .home-container {
+    flex-direction: column;
+  }
+  .img-container {
+    width: 300px;
+  }
+}

@@ -1,0 +1,21 @@
+.members-text {
+  width: 90%;
+  margin: auto;
+}
+.members-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.members-photo {
+  margin: auto;
+}
+.members-photo img {
+  display: block;
+  max-width: 90%;
+  max-height: 70vh;
+  margin: auto;
+}
+.gallery {
+  margin: 10px;
+}

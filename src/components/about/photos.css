@@ -1,0 +1,8 @@
+.swiper {
+  margin: auto;
+  max-width: 900px;
+}
+.swiper img {
+  object-fit: cover;
+  margin: auto;
+}

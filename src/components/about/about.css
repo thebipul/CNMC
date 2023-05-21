@@ -1,0 +1,89 @@
+.about {
+  margin: auto;
+}
+.about-container {
+  text-align: justify;
+  margin: auto;
+}
+.objectives {
+  display: flex;
+  justify-content: center;
+}
+ul {
+  width: min(90%, 60rem);
+  overflow: hidden;
+  margin-inline: auto;
+  padding-inline: clamp(1rem, 5vw, 4rem);
+  list-style: none;
+  perspective: 1000px;
+  display: grid;
+  row-gap: 0.5rem;
+}
+ul li.obj-card {
+  position: relative;
+  padding-block: 1.5rem;
+  padding-inline: 2rem;
+  background-image: linear-gradient(to right, rgb(0 0 0 / 0.15), transparent);
+  transform-style: preserve-3d;
+  color: #ececec;
+  display: grid;
+  grid-template: "icon" "content";
+  row-gap: 0.5rem;
+  column-gap: 2rem;
+}
+ul li.obj-card::before,
+ul li.obj-card::after {
+  --side-rotate: 60deg;
+  content: "";
+  position: absolute;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  transform-origin: calc(50% - (50% * var(--ry))) 50%;
+  transform: rotateY(calc(var(--side-rotate) * var(--ry)));
+  background-color: inherit;
+  background-image: linear-gradient(
+    calc(90deg * var(--ry)),
+    rgb(0 0 0 / 0.25),
+    rgb(0 0 0 / 0.5)
+  );
+}
+ul li.obj-card::before {
+  --ry: -1;
+  right: 100%;
+}
+ul li.obj-card::after {
+  --ry: 1;
+  left: 100%;
+}
+.icons {
+  font-size: 40px;
+}
+#card1 {
+  background-color: #e98b43;
+}
+#card2 {
+  background-color: #c23d2a;
+}
+#card3 {
+  background-color: #842c2a;
+}
+#card4 {
+  background-color: #7a3d1d;
+}
+#card5 {
+  background-color: #022f46;
+}
+#card6 {
+  background-color: #032437;
+}
+.past-board {
+  text-align: center;
+  text-decoration: underline;
+}
+@media (min-width: 30rem) {
+  ul li.obj-card {
+    grid-template: "icon content";
+    text-align: left;
+  }
+}
