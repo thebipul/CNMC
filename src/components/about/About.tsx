@@ -18,12 +18,12 @@ function About() {
             <h2>About CNMC</h2>
             <p>
               Canadian Nepali Mahila Chautari (CNMC) is a non-profit social
-              organization that was established on 2017 with Miss Gita Dawadi
-              (Dhakal) and Miss Gita Sharma acting as President and Vice
-              President respectively in the inaugural convention. Initially 14
-              individual comprised the board members and 10 other members.
-              Currently, 16 members comprise the board and 97 members constitute
-              mostly life members.
+              organization that was inaugurated by MPP Harinder Malli on August,
+              2017 with Miss Gita Dawadi (Dhakal) and Miss Gita Sharma acting as
+              President and Vice President respectively in the inaugural
+              convention. Initially 14 individual comprised the board members
+              and 10 other members. Currently, 16 members comprise the board and
+              97 members constitute mostly life members.
             </p>
             <p>
               This social organization strives on serving the Nepalese community
